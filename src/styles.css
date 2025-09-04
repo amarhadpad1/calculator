@@ -1,0 +1,95 @@
+/* src/styles.css (Dark Theme) */
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #121212; /* dark background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calc {
+  width: 320px;
+  background: #1e1e1e; /* dark gray calculator body */
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+.display {
+  background: #000;
+  color: #0f0; /* neon green digits */
+  font-size: 2rem;
+  padding: 16px;
+  text-align: right;
+  min-height: 60px;
+  overflow-x: auto;
+}
+
+/* Keypad layout */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 16px;
+}
+
+/* Base button */
+.btn {
+  padding: 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 12px;
+  background: #2c2c2c;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.btn:hover {
+  background: #3a3a3a;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+/* Operator buttons (+ - * / %) */
+.op {
+  background: #ff9800;
+  color: #fff;
+}
+
+.op:hover {
+  background: #e68a00;
+}
+
+/* Utility buttons (C, DEL) */
+.util {
+  background: #009688;
+  color: #fff;
+}
+
+.util:hover {
+  background: #00796b;
+}
+
+/* Equals button (bottom-right, wider) */
+.eq {
+  background: #e53935;
+  color: #fff;
+  grid-column: 3 / span 2;
+}
+
+.eq:hover {
+  background: #c62828;
+}
