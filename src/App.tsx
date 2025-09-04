@@ -61,6 +61,7 @@ function toRPN(tokens: Token[]): Token[] {
 }
 
 function evalRPN(rpn: Token[]): number {
+    
   const stack: number[] = [];
   for (const t of rpn) {
     if (typeof t === "number") {
@@ -83,6 +84,9 @@ function evalRPN(rpn: Token[]): number {
         case "/":
           stack.push(b === 0 ? NaN : a / b);
           break;
+        case "%":
+           stack.push(a % b);
+        break;  
         default:
           throw new Error("Unknown operator");
       }
