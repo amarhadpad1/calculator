@@ -62,19 +62,19 @@ body {
 
 /* Operator buttons (+ - * / %) */
 .op {
-  background: #f4a261;
+  background: #c9732d;
   color: white;
 }
 
 /* Utility buttons (C, DEL) */
 .util {
-  background: #2a9d8f;
+  background: #198377;
   color: white;
 }
 
 /* Equals button at bottom-right, spans 2 columns */
 .eq {
-  background: #e76f51;
+  background: #cc5a3d;
   color: white;
   grid-column: 3 / span 2; /* bottom-right spanning */
 }
